@@ -1,18 +1,38 @@
+//adds header and nav
 $.get("Header+NavBar.html",function (data) {
     $("#head_placeholder").replaceWith(data);
 });
-
+//adds footer
 $.get("footer.html",function (data) {
     $("#foot_div").replaceWith(data);
 });
-
-document.getElementById("submit_btn").onclick = function () {
-    var textentered;
-    textentered = document.getElementById("name_input").value;
-    alert(textentered);
-    document.getElementById("namespan").innerText = "done";
-};
-
+//validates form inputs
+$("#mainform").validate({
+   rules: {
+       email: {
+           required: true,
+           email:true
+       },
+       name: {
+           required: true,
+           minlength: 2
+       },
+       Telephone: {
+           required: true,
+           minlength: 8
+       },
+       pass: {
+           required: true,
+           minlength: 6
+       }
+   },
+    messages: {
+       email: {
+           required:"Please enter a email address",
+           email:"Please enter a valid email"
+       }
+    }
+});
 
 
 

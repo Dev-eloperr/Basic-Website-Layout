@@ -14,16 +14,20 @@ body{
     box-sizing: border-box;
 }
 #mainform div {
-    padding: 10px;
+    padding: 10px ;
 }
 #mainform input {
     border-radius: 5%;
     border-width: medium;
-    padding: 0 5px;
-
+    padding: 1px 5px;
+    transition-duration: 0.2s;
 }
 #mainform input::placeholder {
     font-style: italic;
+}
+#mainform input:hover{
+    border-width: thick;
+
 }
 label{
     position: relative;
@@ -33,4 +37,9 @@ label{
 }
 #cont{
     overflow: hidden;
+}
+#submit_btn{
+    width: 100px;
+    font-weight: bold;
+    font-size: 0.7em;
 }
