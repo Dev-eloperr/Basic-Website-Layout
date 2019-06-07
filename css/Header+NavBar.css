@@ -1,0 +1,68 @@
+body{
+    margin:0;
+}
+h1 {
+    color: white;
+    background: dodgerblue;
+    padding: 30px 10px;
+    height: 90px ;
+    font-weight: bold;
+    font-style: italic;
+    margin:0;
+
+    box-sizing: border-box;
+    font-size: 30px;
+
+    font-family: Arial, helvetica, Source Sans Pro ExtraLight;
+}
+nav {
+    position: sticky;
+    top:0;
+    width: 100%;
+
+    font-family: Arial, helvetica, Source Sans Pro ExtraLight;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 2em;
+    margin: 0;
+    padding: 0;
+
+}
+#navbar{
+    margin:0;
+    background:black;
+
+}
+#navbar ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+#navbar li{
+    display: inline;
+    margin: 0;
+    padding: 9px 10px 10px 10px;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(1);
+    text-align: center;
+
+}
+#navbar li:hover{
+    background-color: gray;
+    font-size: 17px;
+
+}
+#navbar a{
+    color: aliceblue;
+    font-weight: 400;
+    font-family: Candara;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.25s;
+
+}
+#navbar a:visited{
+    color: white;
+}

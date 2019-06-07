@@ -1,0 +1,36 @@
+body{
+}
+#mainform{
+    text-align: center;
+    background: #cccccc;
+    padding: 40px;
+    margin: 1% 10%;
+
+    font-family: "helvetica";
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 80%;
+    alignment: center;
+    box-sizing: border-box;
+}
+#mainform div {
+    padding: 10px;
+}
+#mainform input {
+    border-radius: 5%;
+    border-width: medium;
+    padding: 0 5px;
+
+}
+#mainform input::placeholder {
+    font-style: italic;
+}
+label{
+    position: relative;
+    top: 4px;
+    width: 200px;
+    display: inline-block;
+}
+#cont{
+    overflow: hidden;
+}

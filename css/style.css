@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, helvetica, Source Sans Pro ExtraLight;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 2em;
+    margin: 0;
+    padding: 0;
+    height: 80%;
+    position: relative;
+    box-sizing: border-box;
+}
+#cont{
+    overflow: hidden;
+}
+#showcase{
+    background: url("../images/bg_img1.jpg");
+    min-height: 300px;
+    margin: 0px 0 0 0;
+    text-align: center;
+    padding: 40px;
+}
+#showcase p{
+    color: white;
+    font-weight: bold;
+    font-family: "Comic Sans MS";
+    font-size: 40px;
+    line-height: 1.3em;
+}
+#welcomeHeading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px 0 0 0;
+    width: 70%;
+}
+.container{
+    margin: 0 10px 10px 0;
+}
+.container p{
+    float: left;
+    width:calc(70% / 3);
+    border:1px solid #ccc;
+    padding:10px;
+    box-sizing:border-box;
+    transition: width 1s ease-in-out, left 1.5s ease-in-out;
+
+}
+.sidebar{
+    float: right;
+    width: 30%;
+    border: 1px dot-dot-dash #ccc;
+    background: aqua;
+    color: orangered;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    border-width: 2px;
+    border-color: black;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebar{
+        float: none;
+        width: 100%;
+    }
+    .container p{
+        width: 100%;
+        float: none;
+    }
+    .welcomeHeading {
+        width: 100%;
+    }
+}
+
